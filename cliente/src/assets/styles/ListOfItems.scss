@@ -1,0 +1,11 @@
+@import 'variables';
+
+.results {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}

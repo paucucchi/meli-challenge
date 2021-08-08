@@ -1,0 +1,50 @@
+@import 'variables';
+
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #EEEEEE;
+  // Root rem
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input[type=text] {
+  outline: none;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+// Containers styles
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+.main {
+  margin-bottom: 100px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+// Button styles
+button {
+  cursor: pointer;
+}
+.primary-btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: $color-blue;
+  border: 0;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 1rem;
+}

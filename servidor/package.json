@@ -1,0 +1,26 @@
+{
+  "name": "meli-server",
+  "version": "1.0.0",
+  "description": "Mercado Libre Server challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "jest tests/ --verbose",
+    "test:watch": "npm run test -- --watch",
+    "cover": "jest --coverage --coverageDirectory coverage"
+  },
+  "author": "Paula Cucchi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12"
+  }
+}

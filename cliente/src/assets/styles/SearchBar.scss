@@ -1,0 +1,49 @@
+@import 'variables';
+
+header {
+  background-color: $color-yellow;
+  .top-bar {
+    display: flex;
+    align-content: center;
+    padding: 0.75rem 0;
+    img.logo {
+      flex-basis: 61px;
+      height: 100%;
+      margin-right: 2rem;
+    }
+    form.search-bar {
+      flex-grow: 1;
+      display: inline-flex;
+      input[type=text] {
+        width: 100%;
+        padding: 0.5rem;
+        color: $color-dark-gray;
+        font-size: 1.125rem;
+        border: none;
+        border-radius: 4px 0 0 4px;
+        outline: none;
+        &::placeholder{
+          color: $color-silver;
+        }
+        &.error {
+          border: 1px solid #CE0000;
+          &::placeholder{
+            color: #CE0000;
+          }
+        }
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover, 
+      input:-webkit-autofill:focus, 
+      input:-webkit-autofill:active  {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+      }
+      button {
+        background: $color-light-gray;
+        padding: 10px;
+        border: none;
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+}
