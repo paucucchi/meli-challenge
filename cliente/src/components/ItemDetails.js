@@ -14,10 +14,6 @@ function ItemDetails() {
 
   const notFoundMessage = 'Lo sentimos, no se encontró información del producto.';
 
-  if(data.length !== 0) {
-    document.title = `Meli - Descripción de ${data.item.title}`;
-  }
-
   useEffect(() => {
     setIsLoading(true);
     getItemDetails(id).then(response => {

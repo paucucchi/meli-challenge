@@ -6,6 +6,7 @@ import Item from './partials/Item';
 import Breadcrumb from './common/Breadcrumb';
 import Loader from './common/Loader';
 import NotFoundMessage from './common/NotFoundMessage';
+import { Helmet } from "react-helmet";
 
 function ListOfItems() {
   const { search } = useLocation();
@@ -16,7 +17,6 @@ function ListOfItems() {
   const [isLoading, setIsLoading] = useState(false);
 
   const notFoundMessage = 'Lo sentimos, por el momento no tenemos ningún producto disponible para esta búsqueda.';
-  document.title = `Meli - Resultados de ${keyword}`;
 
   useEffect(() => {
     setIsLoading(true);
@@ -46,12 +46,18 @@ function ListOfItems() {
 
   return (
     dataIsEmpty ? <NotFoundMessage message={notFoundMessage} /> :
-    <div className="container">
-      <Breadcrumb categories={data.categories} />
-      <section className="main results">
-        {isLoading ? <Loader /> : itemsList}
-      </section>
-    </div>
+    <>
+      <Helmet>
+        <title>Resultados de {keyword} - Meli Challenge</title>
+        <meta name="description" content={`Productos disponibles para la búsqueda: ${keyword}`} />
+      </Helmet>
+      <div className="container">
+        <Breadcrumb categories={data.categories} />
+        <section className="main results">
+          {isLoading ? <Loader /> : itemsList}
+        </section>
+      </div>
+    </>
   );
 }
 

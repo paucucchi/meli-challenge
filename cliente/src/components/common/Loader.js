@@ -1,8 +1,14 @@
 import '../../assets/styles/Loader.scss';
+import { Helmet } from "react-helmet";
 
 function Loader() {
   return (
-    <div className="loader"></div>
+    <>
+      <Helmet>
+        <title>Cargando...</title>
+      </Helmet>
+      <div className="loader"></div>
+    </>
   );
 }
 
