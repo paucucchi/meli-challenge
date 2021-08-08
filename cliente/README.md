@@ -19,7 +19,7 @@ Se necesita tener `node` y` npm` instalados globalmente en su máquina.
 ## Instalación
 
 ```sh
-git clone https://github.com/paulacucchi/meli-challenge.git
+git clone https://github.com/paucucchi/meli-challenge.git
 cd meli-challenge
 cd cliente
 npm install

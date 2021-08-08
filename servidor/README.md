@@ -7,7 +7,7 @@ Asegurate de tener [Node.js](http://nodejs.org/) instalado en tu máquina.
 ## Correr localmente
 
 ```sh
-git clone https://github.com/paulacucchi/meli-challenge.git
+git clone https://github.com/paucucchi/meli-challenge.git
 cd meli-challenge
 cd servidor
 npm install

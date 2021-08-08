@@ -35,7 +35,7 @@ Dado un id de producto, debería poder ingresar directamente a la vista de detal
 
 Clonar repositorio:
 ```sh
-git clone https://github.com/paulacucchi/meli-challenge.git
+git clone https://github.com/paucucchi/meli-challenge.git
 cd meli-challenge
 ```
 
